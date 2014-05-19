@@ -27,7 +27,7 @@
                         "required": true
                     },
                     {
-                        "name": "Code",
+                        "name": "Area Code",
                         "type": "number",
                         "description": "The Office of National Statistics code for the area",
                         "required": true,
@@ -101,7 +101,7 @@
                         "required": true
                     },
                     {
-                        "name": "Code",
+                        "name": "Area Code",
                         "type": "number",
                         "description": "The Office of National Statistics code for the area",
                         "pattern": "E1500000(0-9)",
