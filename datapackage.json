@@ -1,0 +1,107 @@
+{
+  "name": "euro-elections",
+  "title": "",
+  "homepage": "",
+  "version": "0.1.0",
+  "license": "PDDL-1.0",
+  "resources": [
+    {
+      "name": "west-midlands-seats",
+      "path": "west-midlands-seats.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "bytes": 1202,
+      "schema": {
+        "fields": [
+          {
+            "name": "Region",
+            "type": "string",
+            "description": ""
+          },
+          {
+            "name": "Code",
+            "type": "number",
+            "description": ""
+          },
+          {
+            "name": "Region URL",
+            "type": "string",
+            "description": ""
+          },
+          {
+            "name": "Seat",
+            "type": "integer",
+            "description": ""
+          },
+          {
+            "name": "Party",
+            "type": "string",
+            "description": ""
+          },
+          {
+            "name": "Party ID",
+            "type": "string",
+            "description": ""
+          },
+          {
+            "name": "Name",
+            "type": "string",
+            "description": ""
+          },
+          {
+            "name": "Address",
+            "type": "string",
+            "description": ""
+          }
+        ]
+      }
+    },
+    {
+      "name": "west-midlands-votes",
+      "path": "west-midlands-votes.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "bytes": 1609,
+      "schema": {
+        "fields": [
+          {
+            "name": "Region",
+            "type": "string",
+            "description": ""
+          },
+          {
+            "name": "Code",
+            "type": "number",
+            "description": ""
+          },
+          {
+            "name": "Region URL",
+            "type": "string",
+            "description": ""
+          },
+          {
+            "name": "Party",
+            "type": "string",
+            "description": ""
+          },
+          {
+            "name": "Party ID",
+            "type": "string",
+            "description": ""
+          },
+          {
+            "name": "Votes",
+            "type": "integer",
+            "description": ""
+          },
+          {
+            "name": "Ballots Rejected",
+            "type": "integer",
+            "description": ""
+          }
+        ]
+      }
+    }
+  ],
+  "description": ""
+}
