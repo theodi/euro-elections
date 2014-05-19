@@ -3,4 +3,4 @@ before_script:
   - gem install datapackage
 script:
   - datapackage datapackage.json
-  - status=0 ; for file in *.csv; do csvlint "$file"; if [ $? == 1 ] ; then status=1 ; fi ; done; exit $status
+  - (status=0 ; for file in *.csv; do csvlint "$file"; if [ $? == 1 ] ; then status=1 ; fi ; done; exit $status)
