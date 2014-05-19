@@ -1,0 +1,6 @@
+before_script:
+  - gem install csvlint
+  - gem install datapackage
+script:
+  - datapackage datapackage.json
+  - for file in *.csv; do csvlint "$file"; done
