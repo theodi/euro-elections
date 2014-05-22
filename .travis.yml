@@ -8,3 +8,7 @@ after_success:
 env:
   global:
     secure: E1ZB9G/WP+BTD/KRIZDJiMnq/t0DYlXtEpYibRuNl2xkrdh5an16E/QsmY7KTSe1dvU1WfNzNyR/Hpq0V9jrI2KF00nJcMCNBNtpafNaqXpdEzDXhBhSTqwmlQ1ubl+InO/z8duoPekGPIAHBoxnfzI8W2lJMEegBI4MaoBNXtU=
+branches:
+  only:
+    - gh-pages
+    - /.+/
