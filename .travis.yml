@@ -3,12 +3,13 @@ before_script:
 script:
 - cid validate
 after_success:
-- '[ "$TRAVIS_BRANCH" == "gh-pages" ] && [ "$TRAVIS_PULL_REQUEST" == "false" ] && cid
-  publish'
+- '[ "$TRAVIS_BRANCH" == "gh-pages" ] && [ "$TRAVIS_PULL_REQUEST" == "false" ] &&
+  cid publish'
 env:
   global:
-    secure: E1ZB9G/WP+BTD/KRIZDJiMnq/t0DYlXtEpYibRuNl2xkrdh5an16E/QsmY7KTSe1dvU1WfNzNyR/Hpq0V9jrI2KF00nJcMCNBNtpafNaqXpdEzDXhBhSTqwmlQ1ubl+InO/z8duoPekGPIAHBoxnfzI8W2lJMEegBI4MaoBNXtU=
+  - secure: E1ZB9G/WP+BTD/KRIZDJiMnq/t0DYlXtEpYibRuNl2xkrdh5an16E/QsmY7KTSe1dvU1WfNzNyR/Hpq0V9jrI2KF00nJcMCNBNtpafNaqXpdEzDXhBhSTqwmlQ1ubl+InO/z8duoPekGPIAHBoxnfzI8W2lJMEegBI4MaoBNXtU=
+  - secure: GEziWLyHPlwDiC+8TpIuKUHHRoChEHu0+dClAB+/wpJhHPD+qt5gRpt59roHlQ2saJUe/mOtZGbeqh2XCpqVECGdbqpci/aA9rPl+HglxrlM/8XFBxdT0ELa50n2yM7OElS75f8iS9BN6ajG+wLohxpUVndw3sz1dALnZFNXznc=
 branches:
   only:
-    - gh-pages
-    - /.+/
+  - gh-pages
+  - /.+/
