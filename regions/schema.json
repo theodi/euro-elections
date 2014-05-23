@@ -1,0 +1,26 @@
+{
+  "title": "UK European Election Data - Regions",
+  "description": "Regions in the UK European Election",
+  "fields": [
+      {
+          "name": "Area",
+          "type": "string",
+          "description": "The name of the area which the result is for",
+          "required": true
+      },
+      {
+          "name": "Area Code",
+          "type": "number",
+          "description": "The Office of National Statistics code for the area",
+          "required": true,
+          "pattern": "E1500000(0-9)"
+      },
+      {
+          "name": "Area URL",
+          "type": "string",
+          "description": "",
+          "required": true,
+          "pattern": "http://statistics.data.gov.uk/doc/statistical-geography/E1500000(0-9)"
+      }
+  ]
+}
