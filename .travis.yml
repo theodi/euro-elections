@@ -1,4 +1,5 @@
 before_script:
+- gem install nokogiri -- --use-system-libraries
 - gem install cid
 script:
 - cid validate
