@@ -65,3 +65,11 @@ Once you have made your changes, push them up to your fork, and [open a pull req
 
 Our [robots](https://github.com/theodi/cid) will then check the format of the data,
 and apply a status to it. If we're happy, we'll merge the changes.
+
+You can also validate the changes you've made before pushing by running:
+
+  gem install cid
+  cid validate
+
+If all is well, you should see that each file is valid. If not, make the changes
+and try again.
