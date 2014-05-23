@@ -19,7 +19,7 @@ which will contain the awarded seats and the details of the elected MEPs.
 First, [fork the repo](https://github.com/theodi/euro-elections/fork), then clone it
 to your local machine either on the command line like so:
 
-  git clone git@github.com:YOUR_USERNMAE/euro-elections.git
+  	git clone git@github.com:YOUR_USERNMAE/euro-elections.git
 
 or using [Github for Mac](https://mac.github.com/)
 
@@ -66,10 +66,12 @@ Once you have made your changes, push them up to your fork, and [open a pull req
 Our [robots](https://github.com/theodi/cid) will then check the format of the data,
 and apply a status to it. If we're happy, we'll merge the changes.
 
+## Pre validation
+
 You can also validate the changes you've made before pushing by running:
 
-  gem install cid
-  cid validate
+  	gem install cid
+  	cid validate
 
 If all is well, you should see that each file is valid. If not, make the changes
 and try again.
