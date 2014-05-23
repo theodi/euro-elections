@@ -3,13 +3,13 @@
   "description": "Regions in the UK European Election",
   "fields": [
       {
-          "name": "Area",
+          "name": "Area Code",
           "type": "string",
           "description": "The name of the area which the result is for",
           "required": true
       },
       {
-          "name": "Area Code",
+          "name": "Area",
           "type": "number",
           "description": "The Office of National Statistics code for the area",
           "required": true,
