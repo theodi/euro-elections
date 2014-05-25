@@ -5,22 +5,28 @@
       {
           "name": "Area Code",
           "type": "string",
-          "description": "The name of the area which the result is for",
-          "required": true
+          "description": "The Office of National Statistics code for the area",
+          "constraints": {
+            "required": true,
+            "pattern": "E1500000[0-9]"
+          }
       },
       {
           "name": "Area",
-          "type": "number",
-          "description": "The Office of National Statistics code for the area",
-          "required": true,
-          "pattern": "E1500000(0-9)"
+          "type": "string",
+          "description": "The name of the area which the result is for",
+          "constraints": {
+            "required": true,
+          }
       },
       {
           "name": "Area URL",
           "type": "string",
           "description": "",
-          "required": true,
-          "pattern": "http://statistics.data.gov.uk/doc/statistical-geography/E1500000(0-9)"
+          "constraints": {
+            "required": true,
+            "pattern": "http://statistics.data.gov.uk/doc/statistical-geography/E1500000[0-9]"
+          }
       }
   ]
 }

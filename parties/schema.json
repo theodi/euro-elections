@@ -6,14 +6,18 @@
           "name": "EC Reference Number",
           "type": "string",
           "description": "The  Electoral Commision ID of the party",
-          "required": true,
-          "pattern": "PPm? [0-9]+"
+          "constraints": {
+            "required": true,
+            "pattern": "PPm? [0-9]+"
+          }
       },
       {
           "name": "Entity name",
           "type": "string",
           "description": "The name of the party",
-          "required": true
+          "constraints": {
+            "required": true
+          }
       }
   ]
 }
