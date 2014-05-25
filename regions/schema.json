@@ -16,7 +16,7 @@
           "type": "string",
           "description": "The name of the area which the result is for",
           "constraints": {
-            "required": true,
+            "required": true
           }
       },
       {
