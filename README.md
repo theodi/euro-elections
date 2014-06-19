@@ -5,7 +5,7 @@
 The results of 2014 European Elections are due to be announced on Sunday 25th May.
 
 This repo will contain the results by region for the UK. We're asking you to help
-us collect this data, and test out [Cid](), which will validate the data when
+us collect this data, and test out [Cid](https://github.com/theodi/cid), which will validate the data when
 collaborators submit it.
 
 ## Some background
