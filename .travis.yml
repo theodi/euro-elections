@@ -3,7 +3,7 @@ before_script:
 script:
 - cid validate
 after_success:
-- '[ "$TRAVIS_BRANCH" == "gh-pages" ] && [ "$TRAVIS_PULL_REQUEST" == "false" ] &&
+- '[ "$TRAVIS_BRANCH" == "master" ] && [ "$TRAVIS_PULL_REQUEST" == "false" ] &&
   cid publish'
 env:
   global:
@@ -11,5 +11,5 @@ env:
   - secure: GEziWLyHPlwDiC+8TpIuKUHHRoChEHu0+dClAB+/wpJhHPD+qt5gRpt59roHlQ2saJUe/mOtZGbeqh2XCpqVECGdbqpci/aA9rPl+HglxrlM/8XFBxdT0ELa50n2yM7OElS75f8iS9BN6ajG+wLohxpUVndw3sz1dALnZFNXznc=
 branches:
   only:
-  - gh-pages
+  - master
   - /.+/
